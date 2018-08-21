@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   #get 'welcome/index'
  post 'welcome/index'
  resources :articles do
-  resources :comments
+  resources :comments, only: [:create,:destroy,:update]
  end
 
  #[:create]

@@ -3,6 +3,7 @@ class Article < ApplicationRecord
     #No definimos los campos=> article.title()=> El Titulo del articulo
     #no escribimos los metodos 
     belongs_to :user   
+    has_many :comments
     validates :title, presence: true, uniqueness:true#validaciones
     validates :body, presence: true, length:{minimum:20}#validaciones
 

@@ -43,6 +43,6 @@ class CommentsControllerTest < ActionDispatch::IntegrationTest
       delete comment_url(@comment)
     end
 
-    assert_redirected_to comments_url
+    assert_redirected_to article_url
   end
 end

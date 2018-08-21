@@ -10,6 +10,15 @@
 <div class="field">
 <h3>Comentarios</h3>
 <%= render "comments/form"%>
+<%unless @article.comments.nil? %>
+<ul>
+<%@article.comments.each do |comment| %>
+<li>
+<%= comment.body%> - <%= comment.user.email%>
+</li>
+<%end%>
+</ul>
+<%end%>
 </div>
 <div>
 <%=  link_to 'Editar', edit_article_path(@article),class:"btn be-red white" %>
