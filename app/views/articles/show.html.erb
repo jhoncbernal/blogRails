@@ -1,0 +1,16 @@
+
+<h1><%= @article.title%></h1>
+<div>
+<%unless @article.user.nil? %>
+<p>escrito por <%=@article.user.email%><p>
+<%end%>
+<p>visitas <%=@article.visits_count%><p>
+<p><%=@article.body %></p>
+</div>
+<div class="field">
+<h3>Comentarios</h3>
+<%= render "comments/form"%>
+</div>
+<div>
+<%=  link_to 'Editar', edit_article_path(@article),class:"btn be-red white" %>
+</div>

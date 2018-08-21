@@ -1,0 +1,15 @@
+<!--
+<h1>Bienvenidos a Rails</h1>
+<p>Buscame en app/views/welcome/index.html.erb</p>
+<% [1,2,3,4,6].each do |number|%>
+    <p>Numero:<%= number %></p>
+<%end%>
+
+<%= mundo = "Grupo" %>
+<%= "Hola #{mundo}"%>
+<%= link_to "Recurso con POST", "/welcome/index", method: :post%>
+
+-->
+<h1>Bienvenidos a mi Blog en Rails <%=current_user.email%></h1>
+
+<%=  link_to 'Articulos', articles_path(@article),class:"white btn be-red " %>

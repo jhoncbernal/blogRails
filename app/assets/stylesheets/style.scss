@@ -1,0 +1,57 @@
+.html,body{
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+a,a:visited{
+    color: inherit ;
+    text-decoration: none;
+}
+.white{
+    color:#ECF0f1!important;
+}
+#logo{
+    font-size: 1.2em;
+}
+.no-margin{
+    margin: 0px;
+}
+.top-space{
+    margin: 0.2em;
+}
+.btn{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 10px 12px ;
+}
+.be-red{
+    background-color: #e74c3c;
+}
+
+.red{
+    color:  #e74c3c!important;
+}
+.large-padding{
+    padding: 10px 5px;
+}
+.no-list{
+    list-style:none
+}
+.field{
+    margin-top: 1em;
+}
+.text-left{
+    text-align: left;
+}
+.form-control{
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    width: 100%;
+    display: block;
+    padding: 10px 0px;
+    font-size: 1.2em;
+}
